@@ -14,14 +14,12 @@ Public Sub Main(args As String(), console As Console)
     i = 0
     p = 1
     While (i <> 1)
+        If i = CInt(Console.ReadLine()) Then
+            p = p * i
+            If (i = 1) Then
+            End If
+        End If
     End While
-
-    i = CInt(Console.ReadLine())
-    p = p * i
-    If (i = 1) Then
-
-
-    End If
     If p > (Int64.MaxValue / p) Then
         Console.Write(" Ïàìÿòü ïåðåãðóæèíà !!! = ")
         Console.Write(p)
